@@ -157,6 +157,8 @@ Nội dung mới từ feature-branch
 - Rebase di chuyển các commit từ nhánh này sang nhánh khác bằng cách thay đổi lịch sử commit.
 - Thường được sử dụng để giữ lịch sử commit gọn gàng và tuyến tính.
 
+![Picture 7](p7.png)
+
 ```bash
 git rebase <branch-name>
 ```
