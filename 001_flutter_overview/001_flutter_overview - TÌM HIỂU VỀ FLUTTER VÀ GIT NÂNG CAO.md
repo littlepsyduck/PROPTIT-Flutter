@@ -95,6 +95,8 @@
 ![Picture 5](p5.png)
 
 - Framework và Library đều cung cấp các tính năng (functions) được viết sẵn để chúng ta có thể tái sử dụng.
+- Framework là tập hợp các library.
+- Ví dụ: activity trong android, máy gọi các hàm onStart onCreate..., so với library là người dùng tự gọi đến khi cần, có thể có hoặc không.
 
 | So sánh  |Framework | Library|
 |---|---|---|
