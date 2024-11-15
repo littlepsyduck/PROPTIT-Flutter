@@ -165,7 +165,7 @@ git rebase <branch-name>
   - Không rebase các nhánh đã được chia sẻ với người khác.
   - Sau khi rebase, bạn cần dùng git push --force để cập nhật.
 
-![Picture 8](p8.png)
+![Picture 8](p88.png)
 
 - So với merge:
 
