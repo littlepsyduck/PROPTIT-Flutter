@@ -578,47 +578,6 @@ Dart hỗ trợ lập trình bất đồng bộ thông qua:
 - Từ khóa `async` và `await`: Giúp mã bất đồng bộ trông giống đồng bộ hơn.
 - Phương thức `then()`: Xử lý kết quả khi một Future hoàn thành.
 
-
-**Tại sao mã bất đồng bộ quan trọng?**
-
-Các hoạt động bất đồng bộ cho phép chương trình của bạn tiếp tục thực hiện các tác vụ khác trong khi chờ một tác vụ dài hoàn thành. Một số ví dụ phổ biến về các hoạt động bất đồng bộ bao gồm:
-
-- **Lấy dữ liệu qua mạng** (Fetching data over a network).
-- **Ghi dữ liệu vào cơ sở dữ liệu** (Writing to a database).
-- **Đọc dữ liệu từ tệp** (Reading data from a file).
-
-**Kết quả của các tác vụ bất đồng bộ**
-
-- Những tính toán bất đồng bộ này thường trả về kết quả dưới dạng một `Future` nếu chỉ có một kết quả.
-
-- Nếu có nhiều kết quả (ví dụ như một chuỗi các sự kiện), chúng sẽ được trả về dưới dạng `Stream`.
-
-Ví dụ: Sử dụng hàm bất đồng bộ không đúng cách
-```dart
-String createOrderMessage() {
-  var order = fetchUserOrder();
-  return 'Your order is: $order';
-}
-
-Future<String> fetchUserOrder() =>
-    // Giả sử đây là một hàm phức tạp và chậm.
-    Future.delayed(
-      const Duration(seconds: 2),
-      () => 'Large Latte',
-    );
-
-void main() {
-  print('Fetching user order...');
-  print(createOrderMessage());
-}
-```
-
-Vấn đề trong ví dụ:
-
-- `fetchUserOrder()` là một hàm bất đồng bộ: Sau một khoảng trễ, nó cung cấp một chuỗi mô tả đơn hàng của người dùng ("Large Latte").
-- `createOrderMessage()` không chờ đợi: Hàm này gọi `fetchUserOrder()` nhưng không đợi kết quả trả về.
-- Kết quả không mong muốn: Thay vì in `"Large Latte"`, chương trình in `"Your order is: Instance of '_Future<String>'"`, tức là một Future chưa hoàn thành.
-
 ### 2. Future
 
 #### 2.1 `Future` là gì?
