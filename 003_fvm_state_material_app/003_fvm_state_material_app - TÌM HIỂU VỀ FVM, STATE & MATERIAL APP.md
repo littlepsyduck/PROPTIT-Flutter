@@ -1,16 +1,16 @@
-:memo: <span style="color:orange">FLUTTER_002_BIẾN_VÀ_HÀM_VÀ_CLASS_VÀ_OOP_TRONG_DART</span>
+:memo: <span style="color:orange">FLUTTER_003_FVM_STATE_MATERIAL_APP</span>
 
-# BIẾN & HÀM & CLASS & OOP TRONG DART
+# FVM, STATE & MATERIAL APP
 
 ![Picture 1](p1.webp)
 
 ## Table of Content
 
-- [BIẾN \& HÀM \& CLASS \& OOP TRONG DART](#biến--hàm--class--oop-trong-dart)
+- [FVM, STATE \& MATERIAL APP](#fvm-state--material-app)
   - [Table of Content](#table-of-content)
   - [I. FVM](#i-fvm)
     - [1. Tại sao cần FVM?](#1-tại-sao-cần-fvm)
-  - [2. FVM overview](#2-fvm-overview)
+    - [2. FVM overview](#2-fvm-overview)
   - [II. Statefull, Stateless, vòng đời của một state](#ii-statefull-stateless-vòng-đời-của-một-state)
     - [1. Stateless](#1-stateless)
     - [2. Statefull](#2-statefull)
@@ -46,7 +46,7 @@
   - Có thể xử lý bằng cách tải lại SDK và áp dụng, nhưng sẽ tốn thời gian, không hiệu quả.
   - FVM cho phép dễ dàng chuyển đổi giữa các phiên bản Flutter mà không gặp phải quá trình chờ đợi và cài đặt lặp lại. Điều này giúp tối ưu hóa quá trình phát triển, đặc biệt là khi phải làm việc với nhiều dự án đòi hỏi các phiên bản khác nhau.
 
-## 2. FVM overview
+### 2. FVM overview
 
 [Tham khảo](https://youtu.be/v9iRjM-K1SM?list=PLVnlSO6aQelAAddOFQVJNoaRGZ1mMsj2Q)
 
