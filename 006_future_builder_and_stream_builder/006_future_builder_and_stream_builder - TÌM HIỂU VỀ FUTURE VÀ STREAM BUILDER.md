@@ -166,3 +166,4 @@ class StreamBuilderExample extends StatelessWidget {
 - **Tối ưu hóa**
   - Với FutureBuilder, tránh gọi lại Future không cần thiết bằng cách lưu trữ Future trong biến initState hoặc ViewModel.
   - Với StreamBuilder, đảm bảo Stream không gây rò rỉ bộ nhớ bằng cách đóng Stream hoặc sử dụng StreamController một cách hợp lý.
+

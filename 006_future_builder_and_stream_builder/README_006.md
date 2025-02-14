@@ -1,4 +1,4 @@
-# BUỔI 66
+# BUỔI 6
 
 ## Yêu cầu trước buổi học
 
